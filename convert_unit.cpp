@@ -8,6 +8,17 @@
 #include <vector>
 #include <algorithm>
 
+void print(std::vector<double> &values, double &min, double &max, double &sum)
+{
+    std::sort(values.begin(), values.end());
+    std::cout << "The smallest value is: " << min << "m The largest value is: " << max << "m\n";
+    std::cout << "The sum is: " << sum << "m\n";
+    std::cout << "All input values: ";
+    
+    for(double x:values)
+        std::cout << x << ',';
+}
+
 int main()
 {
     double a, sum, max;
@@ -44,12 +55,7 @@ int main()
         std::cout << "The smallest value is: " << min << "m The largest value is: " << max << "m\n";
     }
 
-    std::sort(values.begin(), values.end());
-    std::cout << "The smallest value is: " << min << "m The largest value is: " << max << "m\n";
-    std::cout << "The sum is: " << sum << "m\n";
-    std::cout << "All input values: ";
-    for(double x:values)
-        std::cout << x << ',';
+    print(values, min, max, sum);
 
     return 0;
 
