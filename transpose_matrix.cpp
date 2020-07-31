@@ -8,6 +8,7 @@ int main()
         for(j = 0; j < 3; ++j)
             std::cin >> arr[i][j];
 
+    std::cout << "Your matrix transposed: \n";
     for(i = 0; i < 3; ++i)
     {
         for(j = 0; j < 3; ++j)
