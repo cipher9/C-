@@ -1,6 +1,5 @@
 /*
-    This was a very interesting exercise demonstrating the use of lower_bound in STL. I'd like to explain some lessons learned.
-    On my first try, I was penalized for the program being too slow on certain use cases therefore I optimized to my current solution.
+    Exercise demonstrating the use of lower_bound in STL. 
     I originally had: on line 18 std::vector<int>::iterator it,lower; and on line 35 if(it != v.end());. Interestingly having two iterators
     is very costly and this kind of implementation should not be attempted unless absolutely necessary.
 
