@@ -1,6 +1,5 @@
 /*
-    An exercise to practice formatting with iomanip library. I can't say I enjoyed this exercise or that
-    I am good at formatting but I learned a lot about formatting in C++ with this exercise.
+    An exercise to practice formatting with iomanip library.
 
     https://www.hackerrank.com/challenges/prettyprint/problem
 */
